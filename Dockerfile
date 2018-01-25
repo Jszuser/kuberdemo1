@@ -1,9 +1,5 @@
-FROM golang
+FROM alpine
 
-ADD . /go/src/github.com/lwander/k8s-demo
+COPY gopath/bin/kuberdemo1 /go/bin/kuberdemo1
 
-RUN go install github.com/lwander/k8s-demo
-
-ADD ./content /content
-
-ENTRYPOINT /go/bin/k8s-demo
+ENTRYPOINT /go/bin/kuberdemo1
