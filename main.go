@@ -11,8 +11,8 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", index)
+	http.HandleFunc("/", hello)
 	port := ":8000"
-	fmt.Printf("Starting to service on port %s\n", port);
+	fmt.Printf("Starting to demo service on port %s\n", port);
 	http.ListenAndServe(port, nil)
 }
