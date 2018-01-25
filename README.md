@@ -1,2 +1,2 @@
-# Webserver for a Spinnaker demo: kuberdemo1
-Hello, world! Demo
+# kuberdemo1
+"Hello, world!" Webserver for a Spinnaker demo.
